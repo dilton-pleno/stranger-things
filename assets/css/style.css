@@ -21,10 +21,12 @@ header{
     display: flex;
     justify-content: space-between;
     position: absolute;
+    top: 0;
+    left: 0;
     padding: 4vw;
     z-index: 99;
     h2{
-        font-size: 32px;
+        font-size: 44px;
     }
 }
 .hero{
