@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @font-face {
     font-family: Benguiat;
-    src: url(/assets/fonts/Benguiat\ Bold.ttf);
+    src: url(/assets/fonts/Benguiat_Bold.ttf);
 }
 *,*::after,*::before{
     margin: 0;
@@ -39,23 +39,21 @@ header{
     align-items: center;
     width: 100%;
     height: 100vh;
-    padding: 0 6vw;
-    .esquerda,.direita{
-        margin-top: -200px;
-    }
+    padding: 0 7vw 8vw 7vw;
+    
     .esquerda{
         display: flex;
         flex-direction: column;
         width: 30vw;
         h3{
-            font-size: 40px;
+            font-size: 2.4rem;
             font-weight: 300;
             text-transform: uppercase;
             letter-spacing: 8px;
         }
         h1{
             font-family: "Benguiat", sans-serif;
-            font-size: 5vw;
+            font-size: 4vw;
         }
     }
     .direita{
@@ -65,7 +63,7 @@ header{
         gap: 32px;
         width: 30vw;
         p{
-            font-size: 44px;
+            font-size: 2vw;
             text-align: right;
         }
         a{
