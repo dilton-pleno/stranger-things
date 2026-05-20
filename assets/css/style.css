@@ -175,13 +175,14 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
     .footerContent{
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         flex-wrap: wrap;
-        padding: 7vw;
+        padding: 8vw 7vw 2vw 7vw;
         .logoFooter{
             width: 30%;
             h3{
@@ -201,17 +202,57 @@ footer{
             justify-content: flex-end;
             align-items: flex-end;
             gap: 8%;
+            .title{
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 12px;
+            }
+        }
+        .linksFooter .social{
+            .icones{
+                display: flex;
+                gap: 8px;
+            }
+        }
+        .linksFooter .institucional .links{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            a{
+                color: #ffffff;
+                text-decoration: none;
+            }
         }
         .copywright{
             width: 100%;
             display: flex;
             flex-direction: column;
-            margin-top: 40px;
+            
             .logos{
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
+                margin-top: 100px;
+                margin-bottom: 120px;
+            }
+            .textoInfinito{
+                display: flex;
+                width: max-content;
+                h3{
+                    margin-right: 6vw;
+                    color: #bfbfbf;
+                    font-size: 14vw;
+                    font-family: "Benguiat", sans-serif;
+                    mix-blend-mode: color-dodge;
+                    animation: textoInfinito 28s linear infinite;
+                }
             }
         }
+    }
+}
+
+@keyframes textoInfinito{
+    100%{
+        transform: translateX(-100%);
     }
 }
